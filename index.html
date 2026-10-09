@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Care Nova Hospital | More than healthcare, human care</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress"></div>
+
+<!-- Line-art icons used in "Facilities" -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 48 48"><path d="M14 6v12a8 8 0 0016 0V6M12 6h4M28 6h4M22 26v6a8 8 0 0016 0"/><circle cx="38" cy="26" r="3"/></symbol>
+  <symbol id="i-lab" viewBox="0 0 48 48"><path d="M18 6l8 4-4 10-8-4zM20 20c8 2 12 10 4 16M10 40h28M14 36h18"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 48 48"><rect x="10" y="4" width="10" height="10"/><path d="M13 7v4M17 7v4M13 9h4M6 18v24M6 32h36v10M6 38h36M24 24h18v8"/><rect x="12" y="24" width="9" height="8" rx="3"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 48 48"><path d="M24 42S6 30 6 18a9 9 0 0118-4 9 9 0 0118 4c0 12-18 24-18 24z"/><path d="M10 24h8l3-6 5 12 3-6h9"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 48 48"><rect x="10" y="8" width="28" height="34" rx="3"/><path d="M18 8V5h12v3M24 18v14M17 25h14"/></symbol>
+  <symbol id="i-amb" viewBox="0 0 48 48"><rect x="6" y="14" width="36" height="22" rx="4"/><path d="M6 26h36M24 17v6M21 20h6"/><circle cx="15" cy="38" r="3"/><circle cx="33" cy="38" r="3"/></symbol>
+</svg>
+
+<header>
+  <a href="#home" class="logo">Care <span>Nova</span></a>
+  <button id="menuBtn" aria-label="Menu">☰</button>
+  <nav id="menu">
+    <a href="#facilities">Facilities</a><a href="#departments">Departments</a><a href="#doctors">Doctors</a>
+    <a href="#packages">Packages</a><a href="#contact">Contact</a>
+    <a href="#book" class="btn sm">Book now</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="kicker">WELCOME TO CARE NOVA</p>
+    <h1>More than healthcare. <em>Human care.</em></h1>
+    <p>Experienced doctors, modern facilities and a team that treats you like family. Care you can trust, every single day.</p>
+    <p class="cta"><a class="btn light" href="#book">Book Appointment</a> <a class="btn ghost-w" href="#departments">Explore Departments</a></p>
+  </div>
+ <svg class="ecg" viewBox="0 0 800 60" preserveAspectRatio="none" aria-hidden="true">
+
+  <path class="ecg-base"
+    d="M0 30H220l15-24 20 48 15-24H520l15-24 20 48 15-24H800"/>
+
+  <path class="ecg-moving"
+    d="M0 30H220l15-24 20 48 15-24H520l15-24 20 48 15-24H800"/>
+
+</svg>
+</section>
+
+<section class="strip">
+  <div><b class="num" data-to="21">0</b><span>years of care</span></div>
+  <div><b class="num" data-to="500000">0</b><span>OPD visits</span></div>
+  <div><b class="num" data-to="50000">0</b><span>surgeries</span></div>
+  <div><b class="num" data-to="250">0</b><span>beds</span></div>
+</section>
+
+<section class="sos">
+  <p>🚑 <b>Emergency?</b> Don't wait for an appointment. Our trauma unit and ICU run 24 hours.</p>
+  <a class="btn red" href="tel:108">Call ambulance 108</a>
+  <button class="btn ghost" id="tipBtn">First-aid checklist</button>
+  <ul id="tips" hidden>
+    <li>Stay calm and keep the patient lying down comfortably.</li>
+    <li>Call for help and share the exact location.</li>
+    <li>No food or water if the person is unconscious.</li>
+    <li>Keep ID, old reports and medicines ready.</li>
+  </ul>
+</section>
+
+<section id="facilities" class="rv">
+  <h2>Facilities we provide</h2><p class="sub">Everything you need for treatment and recovery, under one roof.</p>
+  <div class="facs"><div class="fgrid">
+    <article class="fac"><svg class="fi"><use href="#i-doc"/></svg><div><h3>Top-level doctors</h3><p>Our senior consultants and specialists bring years of hands-on experience across every major field. Each patient gets an unhurried consultation, a clear explanation of the problem and a treatment plan that is personal, practical and kind.</p></div></article>
+    <article class="fac"><svg class="fi"><use href="#i-lab"/></svg><div><h3>Modern equipment</h3><p>From digital X-ray, CT and MRI to a fully equipped in-house laboratory, our technology is chosen to give accurate answers fast. Regular upkeep and trained technicians mean reliable results, so treatment can begin without delay.</p></div></article>
+    <article class="fac"><svg class="fi"><use href="#i-bed"/></svg><div><h3>Patient care</h3><p>Comfortable private and shared rooms, round-the-clock nursing and clean, quiet surroundings help patients rest and heal. Our staff keep families informed at every step, because a calm family helps a patient recover better.</p></div></article>
+    <article class="fac"><svg class="fi"><use href="#i-heart"/></svg><div><h3>Quality healthcare</h3><p>We follow proven clinical protocols, strict infection control and regular safety audits. Every test, medicine and procedure is double-checked, so you receive safe, consistent and effective treatment from admission to discharge.</p></div></article>
+    <article class="fac"><svg class="fi"><use href="#i-clip"/></svg><div><h3>Medical counseling</h3><p>Understanding a diagnosis can feel overwhelming. Our trained counselors sit with patients and families to explain the condition, discuss treatment choices, plan diet and recovery, and offer support long after you go home.</p></div></article>
+    <article class="fac"><svg class="fi"><use href="#i-amb"/></svg><div><h3>Emergency help</h3><p>Our emergency unit is open day and night with ambulances, a trauma team and an ICU on standby. Patients are assessed within minutes, stabilised quickly and moved to the right specialist without losing precious time.</p></div></article>
+  </div></div>
+</section>
+
+<section class="why">
+  <div class="vis" aria-hidden="true">
+    <div class="care-grid"></div>
+    <div class="care-panel">
+      <span class="care-icon">✚</span>
+      <span class="care-label">TRUSTED CARE</span>
+      <strong>Thoughtful medicine.<br>Human attention.</strong>
+      <small>Designed around patient safety, clarity and comfort.</small>
+    </div>
+    <div class="care-mark">24<span>/7</span></div>
+  </div>
+  <div class="wtext"><p class="eyebrow">WHY CARE NOVA</p><h2>Care that feels calm, capable and close.</h2>
+    <p class="why-intro">From diagnosis to recovery, our team brings experienced specialists, modern support and clear communication together in one place.</p>
+    <ul class="wlist"><li>Major specialties under one roof</li><li>Senior doctors guiding every case</li><li>Dedicated specialists for focused care</li><li>24/7 ICU and emergency backup</li><li>Modern, sterile operation theatres</li><li>In-house diagnostics, radiology and pharmacy</li></ul>
+  </div>
+</section>
+
+<section id="departments" class="alt rv">
+  <div class="dhead"><div><h2>Explore our departments</h2><p class="sub">Browse departments and view their specialists.</p></div>
+    <div class="arrows"><button id="prev" aria-label="Previous">←</button><button id="next" aria-label="Next">→</button></div></div>
+  <div class="rail" id="rail"></div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<section id="doctors" class="rv">
+  <div class="dhead"><div><h2>Meet our doctors</h2><p class="sub">Experienced, approachable and always ready to help.</p></div><div class="arrows"><button id="docPrev" aria-label="Previous doctors">←</button><button id="docNext" aria-label="Next doctors">→</button></div></div>
+  <div class="filters">
+    <input id="search" placeholder="🔍 Search by doctor name">
+    <select id="deptFilter"><option value="">All departments</option></select>
+  </div>
+  <div class="doctor-rail-wrap"><div class="doctor-rail" id="docGrid"></div></div><p class="rail-hint">Swipe or use the arrows to browse specialists.</p>
+</section>
+
+<section id="book" class="alt rv two">
+  <div>
+    <h2>Book an appointment</h2><p class="sub">Taken slots disappear automatically, so you never double-book.</p>
+    <form id="bookForm">
+      <label>Patient name<input id="bName" required></label>
+      <label>Mobile number<input id="bPhone" pattern="[0-9]{10}" placeholder="10 digits" required></label>
+      <label>Doctor<select id="bDoctor" required></select></label>
+      <div class="row">
+        <label>Date<input id="bDate" type="date" required></label>
+        <label>Time<select id="bTime" required></select></label>
+      </div>
+      <label>What brings you in?<textarea id="bReason" rows="2"></textarea></label>
+      <button class="btn">Confirm appointment</button>
+    </form>
+    <div id="done" class="done" hidden></div>
+  </div>
+  <aside class="note">
+    <h3>📝 Before you visit</h3>
+    <ul><li>Arrive 15 minutes early.</li><li>Bring old prescriptions and reports.</li><li>Carry a photo ID and your insurance card.</li><li>Need to change your slot? Call us or send a message below.</li></ul>
+  </aside>
+</section>
+
+<section id="packages" class="rv"><h2>Health packages</h2><p class="sub">Preventive check-ups at friendly prices.</p><div class="cards" id="pkgGrid"></div></section>
+
+
+<section id="contact" class="contact">
+  <div class="chead"><h2>Contact Care Nova</h2><p>Questions, feedback or need help with a booking? We usually reply within a few hours.</p></div>
+  <div class="two">
+    <div class="info">
+      <div class="ci">🚑<div><h3>Emergency, 24 x 7</h3><p><a href="tel:108">Call 108</a> or walk straight into our emergency unit.</p></div></div>
+      <div class="ci">📍<div><h3>Address</h3><p>Care Nova Hospital, Main Road, Your City, India</p></div></div>
+      <div class="ci">📞<div><h3>Phone</h3><p><a href="tel:+910000000000">+91 00000 00000</a></p></div></div>
+      <div class="ci">✉️<div><h3>Email</h3><p><a href="mailto:info@carenova.com">info@carenova.com</a></p></div></div>
+      <div class="ci">🕒<div><h3>Timings</h3><p>OPD: Mon to Sat, 8 AM to 8 PM<br>Pharmacy: daily, 8 AM to 10 PM<br>Visitors: 5 PM to 7 PM</p></div></div>
+      <a class="btn light" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Care+Nova+Hospital">Get directions</a>
+    </div>
+    <form id="msgForm" class="mform">
+      <h3>Send us a message</h3>
+      <label>Your name<input id="mName" required></label>
+      <label>Phone or email<input id="mContact" required></label>
+      <label>Topic<select id="mTopic"><option>General enquiry</option><option>Appointment help</option><option>Medical records</option><option>Feedback</option></select></label>
+      <label>Message<textarea id="mText" rows="4" required></textarea></label>
+      <button class="btn">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer>Care Nova Hospital · Your health, our priority · © 2026 College project, demo data only</footer>
+<a href="tel:108" class="sos-fab" aria-label="Call ambulance 108">🚑</a>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
