@@ -42,17 +42,17 @@ const rail=$("#rail"),dots=$("#dots");
 const doctorImages=[
   "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=82",
   "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=82",
-  "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=82",
-  "https://images.unsplash.com/photo-1594824804732-ca8dbd4f4a35?auto=format&fit=crop&w=700&q=82",
-  "https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=700&q=82",
   "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=700&q=82",
-  "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=700&q=82",
+  "https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=700&q=82",
+  "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=700",
+  "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=82",
+  "https://images.pexels.com/photos/19438566/pexels-photo-19438566.jpeg?auto=compress&cs=tinysrgb&w=700",
   "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&w=700&q=82"
 ];
 const deptImages=[
   "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=900&q=82",
   "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=82",
-  "https://images.unsplash.com/photo-1580281657527-47f249e8f2dc?auto=format&fit=crop&w=900&q=82",
+  "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=82",
   "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=82",
   "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?auto=format&fit=crop&w=900&q=82",
   "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=900&q=82",
@@ -61,7 +61,7 @@ const deptImages=[
   "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=82",
   "https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=900&q=82",
   "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=900&q=82",
-  "https://images.unsplash.com/photo-1542736667-069246bdbc74?auto=format&fit=crop&w=900&q=82"
+  "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=82"
 ];
 rail.innerHTML=depts.map((d,i)=>`<article class="dc"><div class="ban"><img src="${deptImages[i%deptImages.length]}" alt="${d[1]} department" loading="lazy"></div><div class="badge">${String(i+1).padStart(2,"0")}</div><h3>${d[1]}</h3><p>${d[2]}</p><button class="go" data-d="${d[1]}" aria-label="View ${d[1]} doctors">→</button></article>`).join("");
 rail.onclick=e=>{const b=e.target.closest(".go");if(b){$("#deptFilter").value=b.dataset.d;$("#search").value="";showDoctors();go("doctors")}};
